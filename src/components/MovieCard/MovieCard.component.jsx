@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./MovieCard.styles.scss";
+import "./MovieCard.style.scss";
 
 const MovieCard = ({ movie }) => {
   const { url, title, category, likes, dislikes } = movie;

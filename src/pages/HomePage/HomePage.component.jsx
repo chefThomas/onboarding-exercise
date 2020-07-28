@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import "./HomePage.styles.scss";
+import "./HomePage.style.scss";
 
 import { MovieCard } from "../../components";
+import { SearchBar } from "../../partials";
 import { movies$ } from "../../movies";
 const HomePage = () => {
   const [movieData, setMovieData] = useState([]);
@@ -13,6 +14,7 @@ const HomePage = () => {
 
   return (
     <div className="home__page">
+      <SearchBar />
       <div className="movie-list">
         {movieData.map((movie) => (
           <div className="movie-container" key={movie.id}>
