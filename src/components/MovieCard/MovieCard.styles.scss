@@ -1,0 +1,22 @@
+.movie {
+  &__card {
+    width: 310px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__image {
+    max-width: 95%;
+    height: 400px;
+  }
+  &__title {
+    text-align: center;
+  }
+
+  &__ratings {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+}

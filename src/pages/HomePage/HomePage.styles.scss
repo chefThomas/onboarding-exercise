@@ -1,0 +1,11 @@
+.home {
+  &__page {
+    margin: 0 auto;
+  }
+}
+
+.movie-list {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
