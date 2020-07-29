@@ -15,7 +15,6 @@ const Header = () => {
     document.body.classList.remove("light");
   }
 
-  console.log(themeData.isDarkMode);
   return (
     <div className="header">
       <SearchBar />
