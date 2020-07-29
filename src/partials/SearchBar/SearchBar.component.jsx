@@ -12,9 +12,8 @@ const SearchBar = () => {
 
   return (
     <div className="searchbar__container">
-      <div>{searchData}</div>
-
       <input
+        className="searchbar__input"
         type="search"
         placeholder="Search Movies"
         onChange={handleChange}

@@ -1,0 +1,14 @@
+.searchbar {
+  &__input {
+    height: 45px;
+    width: 320px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 2px solid rgb(168, 167, 167);
+    font-size: 1.1rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
