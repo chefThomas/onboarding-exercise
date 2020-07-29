@@ -8,12 +8,26 @@ const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
   let { url, title, category, likes, dislikes } = movie;
   const [likeData, setLikeData] = useState({
     likes: movieLikes,
+    isLiked: false,
   });
   const [dislikeData, setDislikeData] = useState({
     dislikes: movieDislikes,
+    isDisliked: false,
   });
 
-  console.log(dislikeData);
+  const handleLikes = () => {
+    if (dislikeData.isDisliked) {
+      setDislikeData({ dislikes: dislikes, isDisliked: false });
+    }
+    setLikeData({ likes: likes + 1, isLiked: true });
+  };
+
+  const handleDislikes = () => {
+    if (likeData.isLiked) {
+      setLikeData({ likes: likes, isLiked: false });
+    }
+    setDislikeData({ dislikes: dislikes + 1, isDisliked: true });
+  };
 
   return (
     <div className="movie__card">
@@ -27,20 +41,16 @@ const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
       <div className="movie__ratings">
         <div className="movie__likes">
           <ThumbUp
-            className="btn"
-            onClick={() => {
-              setLikeData({ likes: likes + 1 });
-            }}
-          />{" "}
+            className={`${likeData.isLiked ? "btn--liked" : ""} btn`}
+            onClick={handleLikes}
+          />
           <span>{likeData.likes > 0 ? likeData.likes : likes}</span>
         </div>
         <div className="movie__dislikes">
           {" "}
           <ThumbDown
-            className="btn"
-            onClick={() => {
-              setDislikeData({ dislikes: dislikes + 1 });
-            }}
+            className={`${dislikeData.isDisliked ? "btn--disliked" : ""} btn`}
+            onClick={handleDislikes}
           />{" "}
           <span>
             {dislikeData.dislikes > 0 ? dislikeData.dislikes : dislikes}

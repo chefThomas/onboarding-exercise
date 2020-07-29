@@ -49,4 +49,12 @@
   width: 25px;
   padding-right: 5px;
   cursor: pointer;
+
+  &--liked {
+    color: green;
+  }
+
+  &--disliked {
+    color: red;
+  }
 }
