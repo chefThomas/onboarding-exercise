@@ -8,7 +8,7 @@ const SearchBar = () => {
   const handleChange = (event) => {
     setSearchData(event.target.value);
   };
-  console.log(searchData);
+
   return (
     <div className="searchbar__container">
       <input
