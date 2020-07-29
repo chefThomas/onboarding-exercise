@@ -9,6 +9,9 @@
 - [x] Used own "Brandon" branch by using checkout
 - [x] Make basic layout responsive
 - [x] Add A11y friendly tags for images
-- [ ] Possibly add dark-mode option
+- [x] Possibly add dark-mode toggle
 - [ ] Maybe create extra filters for fun from a dropdown (genre, etc)
   
+
+---
+I decided to not bother with the extra filter as i had some more UI refinement to work on.
