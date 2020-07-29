@@ -5,13 +5,9 @@ import "./media-queries/media-queries.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { ThemeContext } from "./contexts";
-
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider>
-      <App />
-    </ThemeContext.Provider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
