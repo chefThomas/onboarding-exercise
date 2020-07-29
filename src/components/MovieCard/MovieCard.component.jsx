@@ -5,7 +5,6 @@ import "./MovieCard.style.scss";
 import { ThumbUp, ThumbDown } from "../../assets";
 
 const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
-  let { url, title, category, likes, dislikes, imdb } = movie;
   const [likeData, setLikeData] = useState({
     likes: movieLikes,
     isLiked: false,
@@ -14,6 +13,7 @@ const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
     dislikes: movieDislikes,
     isDisliked: false,
   });
+  let { url, title, category, likes, dislikes, imdb } = movie;
 
   const handleLikes = () => {
     if (dislikeData.isDisliked) {
