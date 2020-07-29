@@ -1,0 +1,4 @@
+- Improve filter selections
+- Add persistence for theming and ratings
+- Make grid layout look better in desktop view when 2 elements are filtered.
+- Use a more interesting card color scheme, but current one works well in its simplicity
