@@ -17,6 +17,8 @@ body {
   --card-title-color: black;
   --card-category-color: rgba(97, 97, 97, 0.7);
   --card-ratings-color: rgb(77, 75, 75);
+  --scrollbar-thumb-background-color: #a70254;
+
   background: var(--background-color);
   transition: all var(--transition-delay) ease;
 }
@@ -27,6 +29,7 @@ body {
   --card-category-color: rgba(255, 255, 255, 0.3);
   --card-title-color: whitesmoke;
   --card-ratings-color: rgb(104, 100, 100);
+  --scrollbar-thumb-background-color: #3a549b;
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +39,7 @@ body::-webkit-scrollbar-track {
   background: none;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #a70254;
+  background-color: var(--scrollbar-thumb-background-color);
   border-radius: 4px;
   border: 3px solid none;
 }
