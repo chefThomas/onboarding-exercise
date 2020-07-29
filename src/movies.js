@@ -7,6 +7,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMjAyNDEyMzc4Ml5BMl5BanBnXkFtZTgwMjEzNjM0NTM@._V1_.jpg",
     likes: 4,
     dislikes: 1,
+    imdb: "https://www.imdb.com/title/tt5164214/?ref_=nv_sr_srsg_0",
   },
   {
     id: "2",
@@ -16,6 +17,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMjg0NjU1MjgyNF5BMl5BanBnXkFtZTgwNzc5NjYyNDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 2,
     dislikes: 0,
+    imdb: "https://www.imdb.com/title/tt4799066/",
   },
   {
     id: "3",
@@ -25,6 +27,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 3,
     dislikes: 1,
+    imdb: "https://www.imdb.com/title/tt3606756/",
   },
   {
     id: "4",
@@ -34,6 +37,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 6,
     dislikes: 6,
+    imdb: "https://www.imdb.com/title/tt6644200/",
   },
   {
     id: "5",
@@ -43,6 +47,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTcxMjUwNjQ5N15BMl5BanBnXkFtZTgwNjk4MzI4NjM@._V1_.jpg",
     likes: 16,
     dislikes: 2,
+    imdb: "https://www.imdb.com/title/tt6343314/",
   },
   {
     id: "6",
@@ -52,6 +57,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 11,
     dislikes: 3,
+    imdb: "https://www.imdb.com/title/tt0110912/",
   },
   {
     id: "7",
@@ -61,6 +67,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BZDQ2ODFhMjgtMjgxNC00NTllLThkMjctNzNjZGE0OWVhZDY4XkEyXkFqcGdeQXVyMzEyMjE2NzA@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 2,
     dislikes: 1,
+    imdb: "https://www.imdb.com/title/tt0114369/",
   },
   {
     id: "8",
@@ -70,6 +77,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 2,
     dislikes: 1,
+    imdb: "https://www.imdb.com/title/tt1375666/",
   },
   {
     id: "9",
@@ -79,6 +87,7 @@ const movies = [
       "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     likes: 22,
     dislikes: 12,
+    imdb: "https://www.imdb.com/title/tt2267998/?ref_=nv_sr_srsg_0",
   },
 ];
 
