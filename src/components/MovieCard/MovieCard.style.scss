@@ -9,7 +9,8 @@
     -moz-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.75);
     border-radius: 4px;
-    background: whitesmoke;
+    background: var(--card-background-color);
+    transition: all var(--transition-delay) ease;
   }
   &__image {
     width: 100%;
@@ -22,12 +23,15 @@
     font-size: 1.5rem;
     font-weight: 600;
     font-family: "Sumana", serif;
+    color: var(--card-title-color);
+    transition: all var(--transition-delay) ease;
   }
 
   &__category {
     font-family: "roboto", sans-serif;
-    color: rgba(97, 97, 97, 0.7);
     font-size: 1rem;
+    color: var(--card-category-color);
+    transition: all var(--transition-delay) ease;
   }
 
   &__ratings {
@@ -38,7 +42,8 @@
     height: 100%;
     width: 80%;
     font-family: "roboto", sans-serif;
-    color: rgb(77, 75, 75);
+    color: var(--card-ratings-color);
+    transition: all var(--transition-delay) ease;
   }
 
   &__likes,

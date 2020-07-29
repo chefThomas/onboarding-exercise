@@ -1,14 +1,26 @@
 .searchbar {
+  &__container {
+    padding-left: calc(50px + 2rem);
+    margin: 0 auto;
+  }
+
   &__input {
     height: 45px;
     width: 320px;
     padding-left: 10px;
     border-radius: 4px;
-    border: 2px solid rgb(168, 167, 167);
+    border: 2px solid var(--text-color);
     font-size: 1.1rem;
+    background-color: var(--background-color);
+    transition: all var(--transition-delay) ease;
+
+    color: var(--text-color);
 
     &:focus {
       outline: none;
+    }
+    &::placeholder {
+      color: var(--text-color);
     }
   }
 }
