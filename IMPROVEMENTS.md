@@ -2,3 +2,4 @@
 - Add persistence for theming and ratings
 - Make grid layout look better in desktop view when 2 elements are filtered.
 - Use a more interesting card color scheme, but current one works well in its simplicity
+-  Add a 404 style illustration to add to message that apologizes for not films being found when filtered.
