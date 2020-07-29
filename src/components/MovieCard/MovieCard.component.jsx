@@ -1,17 +1,52 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "./MovieCard.style.scss";
 
-const MovieCard = ({ movie }) => {
-  const { url, title, category, likes, dislikes } = movie;
+import { RatingContext } from "../../contexts";
+import { ThumbUp, ThumbDown } from "../../assets";
+
+const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
+  let { url, title, category, likes, dislikes } = movie;
+  const [likeData, setLikeData] = useState({
+    likes: movieLikes,
+  });
+  const [dislikeData, setDislikeData] = useState({
+    dislikes: movieDislikes,
+  });
+
+  console.log(dislikeData);
+
   return (
     <div className="movie__card">
-      <img src={url} alt="" className="movie__image" />
+      <img
+        src={url}
+        alt={`Movie poster for ${title}`}
+        className="movie__image"
+      />
       <div className="movie__title">{title}</div>
       <div className="movie__category">{category}</div>
       <div className="movie__ratings">
-        <span className="movie__title">Likes: {likes}</span>
-        <span className="movie__title">Dislikes: {dislikes}</span>
+        <div className="movie__likes">
+          <ThumbUp
+            className="btn"
+            onClick={() => {
+              setLikeData({ likes: likes + 1 });
+            }}
+          />{" "}
+          <span>{likeData.likes > 0 ? likeData.likes : likes}</span>
+        </div>
+        <div className="movie__dislikes">
+          {" "}
+          <ThumbDown
+            className="btn"
+            onClick={() => {
+              setDislikeData({ dislikes: dislikes + 1 });
+            }}
+          />{" "}
+          <span>
+            {dislikeData.dislikes > 0 ? dislikeData.dislikes : dislikes}
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -1,22 +1,52 @@
 .movie {
   &__card {
     width: 310px;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 17px -2px rgba(0, 0, 0, 0.75);
   }
   &__image {
-    max-width: 95%;
-    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   &__title {
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Sumana", serif;
+  }
+
+  &__category {
+    font-family: "roboto", sans-serif;
+    color: rgba(97, 97, 97, 0.7);
+    font-size: 1rem;
   }
 
   &__ratings {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    height: 100%;
+    width: 80%;
+    font-family: "roboto", sans-serif;
+    color: rgb(77, 75, 75);
   }
+
+  &__likes,
+  &__dislikes {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.btn {
+  width: 25px;
+  padding-right: 5px;
+  cursor: pointer;
 }
