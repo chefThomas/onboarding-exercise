@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+  .header {
+    height: 80px;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--background-color);
+    .searchbar {
+      &__container {
+        padding-left: 0;
+      }
+
+      &__input {
+        width: 70vw;
+      }
+    }
+    .theme {
+      &__toggle {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .movie__list {
+    &__container {
+      display: flex;
+      justify-content: center;
+      padding-top: 100px;
+    }
+  }
+
+  .sorry__message {
+    text-align: center;
+  }
+}
