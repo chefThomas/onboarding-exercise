@@ -19,7 +19,7 @@ const movies = [
   },
   {
     id: "3",
-    title: "Les indestructibles 2",
+    title: "Incredibles 2",
     category: "Animation",
     url:
       "https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_SY1000_CR0,0,674,1000_AL_.jpg",
@@ -28,7 +28,7 @@ const movies = [
   },
   {
     id: "4",
-    title: "Sans un bruit",
+    title: "A Quiet Place",
     category: "Thriller",
     url:
       "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
@@ -38,7 +38,7 @@ const movies = [
   {
     id: "5",
     title: "Creed II",
-    category: "Drame",
+    category: "Drama",
     url:
       "https://m.media-amazon.com/images/M/MV5BMTcxMjUwNjQ5N15BMl5BanBnXkFtZTgwNjk4MzI4NjM@._V1_.jpg",
     likes: 16,
@@ -55,15 +55,6 @@ const movies = [
   },
   {
     id: "7",
-    title: "Pulp Fiction",
-    category: "Thriller",
-    url:
-      "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-    likes: 12333,
-    dislikes: 32,
-  },
-  {
-    id: "8",
     title: "Seven",
     category: "Thriller",
     url:
@@ -72,7 +63,7 @@ const movies = [
     dislikes: 1,
   },
   {
-    id: "9",
+    id: "8",
     title: "Inception",
     category: "Thriller",
     url:
@@ -81,7 +72,7 @@ const movies = [
     dislikes: 1,
   },
   {
-    id: "10",
+    id: "9",
     title: "Gone Girl",
     category: "Thriller",
     url:
