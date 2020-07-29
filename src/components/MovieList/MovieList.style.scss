@@ -1,8 +1,12 @@
-.movie {
-  &__list {
+.movie__list {
+  &__container {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  &__cards {
     display: grid;
     place-items: center;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
 }

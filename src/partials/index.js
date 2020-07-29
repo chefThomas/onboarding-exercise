@@ -1,3 +1,4 @@
 import SearchBar from "./SearchBar/SearchBar.component";
+import Header from "./Header/Header.component";
 
-export { SearchBar };
+export { Header, SearchBar };

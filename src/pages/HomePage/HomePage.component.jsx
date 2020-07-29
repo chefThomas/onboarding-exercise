@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./HomePage.style.scss";
 
 import { MovieList } from "../../components";
-import { SearchBar } from "../../partials";
+import { Header } from "../../partials";
 import { movies$ } from "../../movies";
 import { SearchContext } from "../../contexts";
 
@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="home__page">
       <SearchContext.Provider value={{ searchData, setSearchData }}>
-        <SearchBar />
+        <Header />
         <MovieList movieData={filteredMovies}></MovieList>
       </SearchContext.Provider>
     </div>
