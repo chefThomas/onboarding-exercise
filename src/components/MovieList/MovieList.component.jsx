@@ -1,17 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 
 import "./MovieList.style.scss";
 
-import { RatingContext } from "../../contexts";
 import { MovieCard } from "../index";
 
 const MovieList = (props) => {
-  const { ratingData, setRatingData } = useContext(RatingContext);
-
-  // useEffect(() => {
-  //   setRatingData(props.movie);
-  // }, []);
-
   return (
     <div className="movie__list__container">
       <div className="movie__list__cards">

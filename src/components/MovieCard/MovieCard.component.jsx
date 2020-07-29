@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import "./MovieCard.style.scss";
 
-import { RatingContext } from "../../contexts";
 import { ThumbUp, ThumbDown } from "../../assets";
 
 const MovieCard = ({ movie, movieLikes, movieDislikes }) => {
