@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import "./SearchBar.style.scss";
+import { SearchContext } from "../../contexts";
 
 const SearchBar = () => {
-  const [searchData, setSearchData] = useState("");
+  const { searchData, setSearchData } = useContext(SearchContext);
 
   const handleChange = (event) => {
     setSearchData(event.target.value);
@@ -11,6 +12,8 @@ const SearchBar = () => {
 
   return (
     <div className="searchbar__container">
+      <div>{searchData}</div>
+
       <input
         type="search"
         placeholder="Search Movies"
